@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "definations",
+  "info": {
+    "singularName": "defination",
+    "pluralName": "definations",
+    "displayName": "defination",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "defination": {
+      "type": "string",
+      "unique": true
+    },
+    "examples": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::example.example"
+    }
+  }
+}

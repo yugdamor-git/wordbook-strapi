@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "words",
+  "info": {
+    "singularName": "word",
+    "pluralName": "words",
+    "displayName": "word",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "word": {
+      "type": "string",
+      "unique": true
+    },
+    "phonetic": {
+      "type": "string"
+    },
+    "audio_url": {
+      "type": "string"
+    },
+    "origin": {
+      "type": "string"
+    },
+    "definations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::defination.defination"
+    },
+    "part_of_speech": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "examples",
+  "info": {
+    "singularName": "example",
+    "pluralName": "examples",
+    "displayName": "example",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "example": {
+      "type": "string"
+    },
+    "antonyms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::antonym.antonym"
+    },
+    "synonyms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::synonym.synonym"
+    }
+  }
+}
